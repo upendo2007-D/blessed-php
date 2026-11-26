@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1220" viewBox="0 0 1700 1220" role="img" aria-labelledby="title description">
+  <title id="title">Figure 2.1. Website and CMS system architecture overview</title>
+  <desc id="description">Architecture of the Lugazi Progressive Secondary School website: visitors and administrators use a browser to reach the XAMPP Apache and PHP application. Public pages and the authenticated CMS use shared PHP helpers and PDO to access MySQL, while site settings are stored in a PHP configuration file and static assets are served from the assets directory.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1l9 5-9 5z" fill="#52708f"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1l9 5-9 5z" fill="#14818a"/>
+    </marker>
+    <style>
+      .bg { fill: #f3f6fb; }
+      .title { font: 700 31px Arial, sans-serif; fill: #14213d; }
+      .subtitle { font: 15px Arial, sans-serif; fill: #586a7e; }
+      .server { fill: #edf2f8; stroke: #b7c8da; stroke-width: 2; }
+      .box { fill: #fff; stroke: #ccd7e4; stroke-width: 2; }
+      .box-blue { fill: #eaf1f8; stroke: #b6c8dc; stroke-width: 2; }
+      .box-teal { fill: #e7f4f3; stroke: #abd5d2; stroke-width: 2; }
+      .box-warm { fill: #fff5e8; stroke: #e7cc9f; stroke-width: 2; }
+      .server-title { font: 700 20px Arial, sans-serif; fill: #173b67; }
+      .head { font: 700 18px Arial, sans-serif; fill: #173b67; }
+      .body { font: 14px Arial, sans-serif; fill: #42546a; }
+      .small { font: 13px Arial, sans-serif; fill: #586a7e; }
+      .tag { font: 700 12px Arial, sans-serif; fill: #54708c; letter-spacing: 1.2px; }
+      .flow { fill: none; stroke: #52708f; stroke-width: 3; marker-end: url(#arrow); }
+      .flow-teal { fill: none; stroke: #14818a; stroke-width: 3; marker-end: url(#arrow-teal); }
+      .flow-both { fill: none; stroke: #14818a; stroke-width: 3; marker-start: url(#arrow-teal); marker-end: url(#arrow-teal); }
+      .dash { fill: none; stroke: #8a9bb0; stroke-width: 2; stroke-dasharray: 7 6; marker-end: url(#arrow); }
+      .caption { font: italic 15px Arial, sans-serif; fill: #29364b; }
+      .rule { stroke: #d3dde7; stroke-width: 1.5; }
+    </style>
+  </defs>
+  <rect class="bg" width="1700" height="1220"/>
+  <text class="title" x="48" y="58">Website and CMS system architecture overview</text>
+  <text class="subtitle" x="48" y="88">Lugazi Progressive Secondary School website · PHP application on a local XAMPP / Apache server</text>
+
+  <!-- Users and browsers -->
+  <rect class="box-blue" x="45" y="265" width="275" height="195" rx="14"/>
+  <text class="tag" x="70" y="300">PUBLIC ACCESS</text>
+  <text class="head" x="70" y="337">Website visitor</text>
+  <text class="body" x="70" y="370">
+    <tspan x="70" dy="0">Uses a web browser to view</tspan>
+    <tspan x="70" dy="22">school pages, browse the gallery</tspan>
+    <tspan x="70" dy="22">and submit a contact message.</tspan>
+  </text>
+
+  <rect class="box-blue" x="45" y="535" width="275" height="195" rx="14"/>
+  <text class="tag" x="70" y="570">ADMIN ACCESS</text>
+  <text class="head" x="70" y="607">CMS administrator</text>
+  <text class="body" x="70" y="640">
+    <tspan x="70" dy="0">Uses a browser to sign in and</tspan>
+    <tspan x="70" dy="22">manage website content through</tspan>
+    <tspan x="70" dy="22">the protected admin dashboard.</tspan>
+  </text>
+
+  <!-- Application server -->
+  <rect class="server" x="365" y="145" width="820" height="870" rx="18"/>
+  <text class="server-title" x="395" y="186">XAMPP web server</text>
+  <text class="subtitle" x="395" y="211">Apache handles HTTP requests and serves PHP pages and static files.</text>
+
+  <rect class="box" x="405" y="240" width="740" height="105" rx="12"/>
+  <text class="tag" x="430" y="271">WEB SERVER / APPLICATION ENTRY</text>
+  <text class="head" x="430" y="307">Apache + PHP runtime</text>
+  <text class="body" x="705" y="307">Routes requests to public pages or the admin CMS.</text>
+
+  <rect class="box" x="405" y="390" width="350" height="290" rx="12"/>
+  <text class="tag" x="430" y="422">PUBLIC WEBSITE</text>
+  <text class="head" x="430" y="458">Page modules</text>
+  <text class="body" x="430" y="492">
+    <tspan x="430" dy="0">Root entry redirects to the home page.</tspan>
+    <tspan x="430" dy="25">Public PHP pages:</tspan>
+    <tspan x="448" dy="24">Home · About · Academics</tspan>
+    <tspan x="448" dy="24">Gallery · Contact</tspan>
+    <tspan x="430" dy="32">Render school content and handle</tspan>
+    <tspan x="430" dy="22">contact form submissions.</tspan>
+  </text>
+
+  <rect class="box" x="795" y="390" width="350" height="290" rx="12"/>
+  <text class="tag" x="820" y="422">PROTECTED ADMIN CMS</text>
+  <text class="head" x="820" y="458">Admin modules</text>
+  <text class="body" x="820" y="492">
+    <tspan x="820" dy="0">Login and session authentication</tspan>
+    <tspan x="820" dy="26">Dashboard for page copy, settings,</tspan>
+    <tspan x="820" dy="22">programmes, admissions, staff, news,</tspan>
+    <tspan x="820" dy="22">courses, gallery and contact inbox</tspan>
+    <tspan x="820" dy="30">Save, update, delete and message</tspan>
+    <tspan x="820" dy="22">read-status actions.</tspan>
+  </text>
+
+  <rect class="box-teal" x="405" y="725" width="740" height="230" rx="12"/>
+  <text class="tag" x="430" y="758">SHARED PHP SERVICES</text>
+  <text class="head" x="430" y="794">Reusable components and helpers</text>
+  <line class="rule" x1="430" y1="812" x2="1120" y2="812"/>
+  <text class="body" x="430" y="843">
+    <tspan x="430" dy="0">Shared page layout: meta, header and footer components</tspan>
+    <tspan x="430" dy="26">Bootstrap and functions: site settings, page content, rows and output escaping</tspan>
+    <tspan x="430" dy="26">Database helper: PDO connection using config/config.php</tspan>
+    <tspan x="430" dy="26">Admin authentication and CSRF request checks</tspan>
+  </text>
+
+  <rect class="box-warm" x="405" y="973" width="740" height="32" rx="8"/>
+  <text class="small" x="430" y="995">Static site entry: index.php redirects to /pages/home.php</text>
+
+  <!-- External data and file storage -->
+  <rect class="box-teal" x="1260" y="170" width="390" height="420" rx="14"/>
+  <text class="tag" x="1288" y="205">RELATIONAL DATA</text>
+  <text class="head" x="1288" y="242">MySQL database</text>
+  <text class="body" x="1288" y="275">blessed_sai</text>
+  <line class="rule" x1="1288" y1="293" x2="1622" y2="293"/>
+  <text class="body" x="1288" y="324">
+    <tspan x="1288" dy="0">admins · page_content</tspan>
+    <tspan x="1288" dy="27">programs · admissions</tspan>
+    <tspan x="1288" dy="27">staff_members · news_items</tspan>
+    <tspan x="1288" dy="27">academic_courses · gallery_items</tspan>
+    <tspan x="1288" dy="27">contact_messages</tspan>
+  </text>
+  <text class="small" x="1288" y="548">Accessed by the PHP application via PDO.</text>
+
+  <rect class="box-warm" x="1260" y="635" width="390" height="175" rx="14"/>
+  <text class="tag" x="1288" y="670">SITE CONFIGURATION</text>
+  <text class="head" x="1288" y="707">config/site.php</text>
+  <text class="body" x="1288" y="740">
+    <tspan x="1288" dy="0">School name, motto, contact details,</tspan>
+    <tspan x="1288" dy="23">logo path, office hours and map URL.</tspan>
+    <tspan x="1288" dy="26">Admin settings are saved to this file.</tspan>
+  </text>
+
+  <rect class="box" x="1260" y="855" width="390" height="145" rx="14"/>
+  <text class="tag" x="1288" y="890">STATIC FILES</text>
+  <text class="head" x="1288" y="927">assets/</text>
+  <text class="body" x="1288" y="958">CSS stylesheets and school images</text>
+  <text class="small" x="1288" y="982">Served by Apache to the browser.</text>
+
+  <!-- Connections -->
+  <path class="flow" d="M320 360h38v-68h40"/>
+  <text class="small" x="326" y="272">HTTP request</text>
+  <path class="flow" d="M320 630h38v-340h40"/>
+  <text class="small" x="326" y="520">HTTP request</text>
+
+  <path class="flow" d="M775 345v28h-195v12"/>
+  <path class="flow" d="M775 373h195v12"/>
+  <path class="flow" d="M580 680v31h185v10"/>
+  <path class="flow" d="M970 680v31h-205v10"/>
+
+  <path class="flow-both" d="M1145 790h105v-410h10"/>
+  <text class="small" x="1155" y="560">PDO / MySQL reads and writes</text>
+  <path class="flow-both" d="M1145 835h65v-112h40"/>
+  <text class="small" x="1152" y="705">Read / save settings</text>
+  <path class="dash" d="M775 725v-24h-55v-21"/>
+  <path class="dash" d="M970 725v-24h55v-21"/>
+
+  <path class="dash" d="M1145 300h55v625h50"/>
+  <text class="small" x="1153" y="904">Static responses</text>
+
+  <rect class="box-blue" x="45" y="825" width="275" height="145" rx="14"/>
+  <text class="tag" x="70" y="860">OUTPUT</text>
+  <text class="head" x="70" y="897">Rendered website</text>
+  <text class="body" x="70" y="929">
+    <tspan x="70" dy="0">HTML pages, stylesheets</tspan>
+    <tspan x="70" dy="22">and images in the browser.</tspan>
+  </text>
+  <path class="flow" d="M405 900h-38v-3h-35"/>
+
+  <text class="caption" x="48" y="1155">Figure 2.1. Website and CMS system architecture overview.</text>
+</svg>

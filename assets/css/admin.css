@@ -1,0 +1,145 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #1f2937;
+  background: #f3f6fa;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, textarea { font: inherit; }
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 16px;
+  background: #0f4c81;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background: #0a3a69; }
+button.danger { background: #a62b2b; }
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px max(24px, calc((100% - 1120px) / 2));
+  background: #0f4c81;
+  color: white;
+}
+.admin-header div { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.admin-header span { color: #dbeafe; }
+.admin-header form { margin: 0; }
+.button-link { padding: 0; background: transparent; text-decoration: underline; }
+.admin-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 24px;
+  width: min(1440px, calc(100% - 32px));
+  margin: 32px auto 70px;
+  align-items: start;
+}
+.admin-sidebar {
+  position: sticky;
+  top: 24px;
+  padding: 22px 14px;
+  border: 1px solid #183d60;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #12395e, #0b2742);
+  box-shadow: 0 12px 28px rgba(15, 48, 77, .2);
+}
+.admin-sidebar h2 {
+  margin: 0 10px 16px;
+  padding: 0 0 14px;
+  border-bottom: 1px solid rgba(219, 234, 254, .2);
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: .02em;
+}
+.admin-sidebar nav { display: grid; gap: 6px; }
+.admin-sidebar a {
+  display: block;
+  padding: 11px 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #dbeafe;
+  font-size: .94rem;
+  text-decoration: none;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease, transform .15s ease;
+}
+.admin-sidebar a:hover, .admin-sidebar a:focus-visible {
+  border-color: rgba(125, 211, 252, .3);
+  outline: none;
+  background: rgba(125, 211, 252, .13);
+  color: #fff;
+  transform: translateX(2px);
+}
+.admin-main { min-width: 0; margin: 0; }
+.admin-section { scroll-margin-top: 20px; }
+.admin-main > h1 { margin: 0 0 22px; }
+.admin-section, .login-card {
+  margin: 20px 0;
+  padding: 24px;
+  border: 1px solid #dce3eb;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 18px rgba(15, 76, 129, .05);
+}
+.admin-section > h2 { margin: 0 0 18px; color: #0f4c81; }
+.settings-grid, .item-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+label { display: grid; gap: 6px; font-weight: 600; }
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #bac6d3;
+  border-radius: 6px;
+  background: #fff;
+  color: #1f2937;
+}
+textarea { resize: vertical; }
+.settings-grid button { justify-self: start; }
+.block-editor, .item-editor, .message-card {
+  margin: 12px 0;
+  padding: 16px;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+}
+.block-editor h3 { margin: 0 0 12px; }
+.block-editor label + label { margin-top: 12px; }
+.block-editor button { margin-top: 12px; }
+.item-editor > form:first-child { display: grid; gap: 12px; }
+.item-editor > form:last-child { margin-top: 10px; }
+.item-fields { margin-bottom: 12px; }
+.item-fields label:has(input[type="checkbox"]) { display: flex; align-items: center; }
+.item-fields input[type="checkbox"] { width: 18px; height: 18px; }
+.new-item { margin-top: 16px; }
+.new-item summary { cursor: pointer; font-weight: 700; color: #0f4c81; }
+.new-item form { margin-top: 16px; }
+.message-card p { overflow-wrap: anywhere; }
+.message-card.unread { border-left: 5px solid #e3a322; }
+.notice { padding: 12px 14px; border-radius: 6px; }
+.notice.success { background: #e6f5eb; color: #145c2c; }
+.notice.error { background: #fde8e8; color: #8b1c1c; }
+.admin-login-page { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+.login-card { width: min(420px, 100%); }
+.login-card h1 { margin-top: 0; color: #0f4c81; }
+.login-card form { display: grid; gap: 16px; margin-top: 20px; }
+@media (max-width: 680px) {
+  .settings-grid, .item-fields { grid-template-columns: 1fr; }
+  .admin-header { align-items: flex-start; }
+  .admin-section { padding: 18px; }
+}
+@media (max-width: 800px) {
+  .admin-layout {
+    grid-template-columns: 190px minmax(480px, 1fr);
+    gap: 16px;
+    overflow-x: auto;
+  }
+  .admin-sidebar { padding: 18px 10px; }
+  .admin-sidebar a { padding: 10px; font-size: .88rem; }
+}

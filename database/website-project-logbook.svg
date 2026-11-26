@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title description">
+  <title id="title">Website project logbook record sheet</title>
+  <desc id="description">A blank project logbook template for recording dated work, outcomes, challenges, next steps, and supervisor sign-off for the school website project.</desc>
+  <defs>
+    <style>
+      .paper { fill: #fff; }
+      .ink { fill: #18324f; }
+      .muted { fill: #586a7e; }
+      .rule { stroke: #c9d4df; stroke-width: 2; }
+      .border { stroke: #d7e0e9; stroke-width: 2; fill: #fff; }
+      .header { fill: #173b67; }
+      .header-text { fill: #fff; font: 700 18px Arial, sans-serif; }
+      .label { fill: #18324f; font: 700 18px Arial, sans-serif; }
+      .body { fill: #586a7e; font: 16px Arial, sans-serif; }
+      .small { fill: #586a7e; font: 14px Arial, sans-serif; }
+      .title { fill: #173b67; font: 700 34px Arial, sans-serif; letter-spacing: 1px; }
+      .subtitle { fill: #18324f; font: 700 21px Arial, sans-serif; }
+      .section { fill: #edf3f8; }
+    </style>
+  </defs>
+  <rect width="1200" height="1600" fill="#eef2f6"/>
+  <rect class="paper" x="48" y="40" width="1104" height="1520" rx="8"/>
+  <rect class="header" x="48" y="40" width="1104" height="190" rx="8"/>
+  <path class="header" d="M48 210h1104v20H48z"/>
+  <text x="96" y="105" fill="#c6d9eb" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">PROJECT RECORD</text>
+  <text x="96" y="157" fill="#fff" font-family="Arial, sans-serif" font-size="38" font-weight="700">LOGBOOK</text>
+  <text x="96" y="195" fill="#e1ebf4" font-family="Arial, sans-serif" font-size="19">Lugazi Progressive Secondary School Website</text>
+
+  <text class="label" x="96" y="282">Student name</text>
+  <line class="rule" x1="250" y1="288" x2="640" y2="288"/>
+  <text class="label" x="690" y="282">Project period</text>
+  <line class="rule" x1="830" y1="288" x2="1104" y2="288"/>
+
+  <rect class="section" x="88" y="330" width="1024" height="62" rx="6"/>
+  <text class="subtitle" x="112" y="369">Work session entries</text>
+  <text class="small" x="760" y="368">Complete with your actual dates and activities.</text>
+
+  <rect class="border" x="88" y="410" width="1024" height="820" rx="4"/>
+  <path class="header" d="M92 410h1016v70H92z"/>
+  <line x1="250" y1="410" x2="250" y2="1230" stroke="#d7e0e9" stroke-width="2"/>
+  <line x1="700" y1="410" x2="700" y2="1230" stroke="#d7e0e9" stroke-width="2"/>
+  <line x1="92" y1="480" x2="1108" y2="480" stroke="#d7e0e9" stroke-width="2"/>
+  <line x1="92" y1="630" x2="1108" y2="630" stroke="#d7e0e9" stroke-width="2"/>
+  <line x1="92" y1="780" x2="1108" y2="780" stroke="#d7e0e9" stroke-width="2"/>
+  <line x1="92" y1="930" x2="1108" y2="930" stroke="#d7e0e9" stroke-width="2"/>
+  <line x1="92" y1="1080" x2="1108" y2="1080" stroke="#d7e0e9" stroke-width="2"/>
+  <text class="header-text" x="110" y="453">DATE</text>
+  <text class="header-text" x="272" y="453">ACTIVITY / WORK COMPLETED</text>
+  <text class="header-text" x="722" y="453">OUTCOME / NEXT STEPS</text>
+  <text class="small" x="110" y="510">Entry 1</text>
+  <text class="small" x="110" y="660">Entry 2</text>
+  <text class="small" x="110" y="810">Entry 3</text>
+  <text class="small" x="110" y="960">Entry 4</text>
+  <text class="small" x="110" y="1110">Entry 5</text>
+
+  <rect class="section" x="88" y="1260" width="1024" height="54" rx="6"/>
+  <text class="subtitle" x="112" y="1295">Review and sign-off</text>
+  <text class="label" x="96" y="1362">Supervisor comments</text>
+  <line class="rule" x1="96" y1="1400" x2="1104" y2="1400"/>
+  <line class="rule" x1="96" y1="1435" x2="1104" y2="1435"/>
+  <text class="label" x="96" y="1490">Supervisor signature</text>
+  <line class="rule" x1="310" y1="1496" x2="690" y2="1496"/>
+  <text class="label" x="735" y="1490">Date</text>
+  <line class="rule" x1="795" y1="1496" x2="1104" y2="1496"/>
+  <text class="small" x="96" y="1536">Replace this blank template with completed, genuine logbook entries and signatures before submission.</text>
+</svg>

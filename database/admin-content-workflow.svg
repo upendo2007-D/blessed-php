@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title description">
+  <title id="title">Figure 2.4. Main administrative and content publishing workflow</title>
+  <desc id="description">An administrator signs in, manages website content through the dashboard, saves validated changes to the site settings file or database, and the public website displays the saved content. A separate path shows visitor contact messages arriving in the admin inbox.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1l9 5-9 5z" fill="#52708f"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1l9 5-9 5z" fill="#14818a"/>
+    </marker>
+    <style>
+      .bg { fill: #f3f6fb; }
+      .title { font: 700 31px Arial, sans-serif; fill: #14213d; }
+      .subtitle { font: 15px Arial, sans-serif; fill: #586a7e; }
+      .box { fill: #fff; stroke: #ccd7e4; stroke-width: 2; }
+      .box-blue { fill: #eaf1f8; stroke: #b6c8dc; stroke-width: 2; }
+      .box-teal { fill: #e7f4f3; stroke: #abd5d2; stroke-width: 2; }
+      .box-warm { fill: #fff5e8; stroke: #e7cc9f; stroke-width: 2; }
+      .step { font: 700 12px Arial, sans-serif; fill: #54708c; letter-spacing: 1.4px; }
+      .head { font: 700 19px Arial, sans-serif; fill: #173b67; }
+      .body { font: 14px Arial, sans-serif; fill: #42546a; }
+      .small { font: 13px Arial, sans-serif; fill: #586a7e; }
+      .flow { fill: none; stroke: #52708f; stroke-width: 3; marker-end: url(#arrow); }
+      .flow-teal { fill: none; stroke: #14818a; stroke-width: 3; marker-end: url(#arrow-teal); }
+      .dash { fill: none; stroke: #c28a36; stroke-width: 2.5; stroke-dasharray: 8 7; marker-end: url(#arrow); }
+      .line { stroke: #d3dde7; stroke-width: 1.5; }
+      .section { font: 700 18px Arial, sans-serif; fill: #173b67; }
+      .caption { font: italic 15px Arial, sans-serif; fill: #29364b; }
+      .label { font: 12px Arial, sans-serif; fill: #586a7e; }
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="1200"/>
+  <text class="title" x="55" y="58">Main administrative and content publishing workflow</text>
+  <text class="subtitle" x="55" y="88">Lugazi Progressive Secondary School website · Blessed Sai CMS</text>
+
+  <!-- Main publishing path -->
+  <g>
+    <rect class="box-blue" x="50" y="170" width="190" height="220" rx="12"/>
+    <text class="step" x="70" y="201">01 · ADMIN</text>
+    <text class="head" x="70" y="239">Administrator</text>
+    <text class="body" x="70" y="271">
+      <tspan x="70" dy="0">Opens the website</tspan>
+      <tspan x="70" dy="21">admin sign-in page.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect class="box" x="275" y="170" width="190" height="220" rx="12"/>
+    <text class="step" x="295" y="201">02 · AUTHENTICATE</text>
+    <text class="head" x="295" y="239">Sign in</text>
+    <text class="body" x="295" y="271">
+      <tspan x="295" dy="0">Email and password</tspan>
+      <tspan x="295" dy="21">are checked against</tspan>
+      <tspan x="295" dy="21">the admin account.</tspan>
+    </text>
+    <text class="small" x="295" y="360">admins table</text>
+  </g>
+  <g>
+    <rect class="box-blue" x="500" y="170" width="190" height="220" rx="12"/>
+    <text class="step" x="520" y="201">03 · ACCESS</text>
+    <text class="head" x="520" y="239">Admin dashboard</text>
+    <text class="body" x="520" y="271">
+      <tspan x="520" dy="0">Authenticated session</tspan>
+      <tspan x="520" dy="21">opens content tools,</tspan>
+      <tspan x="520" dy="21">settings and inbox.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect class="box" x="725" y="170" width="190" height="220" rx="12"/>
+    <text class="step" x="745" y="201">04 · SELECT</text>
+    <text class="head" x="745" y="239">Choose a section</text>
+    <text class="body" x="745" y="271">
+      <tspan x="745" dy="0">Select settings, page</tspan>
+      <tspan x="745" dy="21">copy, home-page items,</tspan>
+      <tspan x="745" dy="21">academics or gallery.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect class="box" x="950" y="170" width="190" height="220" rx="12"/>
+    <text class="step" x="970" y="201">05 · EDIT</text>
+    <text class="head" x="970" y="239">Manage content</text>
+    <text class="body" x="970" y="271">
+      <tspan x="970" dy="0">Add, edit or remove</tspan>
+      <tspan x="970" dy="21">content; submit the</tspan>
+      <tspan x="970" dy="21">change from the form.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect class="box-warm" x="1175" y="170" width="190" height="220" rx="12"/>
+    <text class="step" x="1195" y="201">06 · SAVE</text>
+    <text class="head" x="1195" y="239">Validate &amp; store</text>
+    <text class="body" x="1195" y="271">
+      <tspan x="1195" dy="0">Check request token</tspan>
+      <tspan x="1195" dy="21">and input, then save</tspan>
+      <tspan x="1195" dy="21">to its data store.</tspan>
+    </text>
+  </g>
+  <g>
+    <rect class="box-teal" x="1400" y="170" width="160" height="220" rx="12"/>
+    <text class="step" x="1418" y="201">07 · DISPLAY</text>
+    <text class="head" x="1418" y="239">Public site</text>
+    <text class="body" x="1418" y="271">
+      <tspan x="1418" dy="0">Pages show</tspan>
+      <tspan x="1418" dy="21">the saved</tspan>
+      <tspan x="1418" dy="21">content.</tspan>
+    </text>
+  </g>
+  <path class="flow" d="M240 280h30"/>
+  <path class="flow" d="M465 280h30"/>
+  <path class="flow" d="M690 280h30"/>
+  <path class="flow" d="M915 280h30"/>
+  <path class="flow" d="M1140 280h30"/>
+  <path class="flow" d="M1365 280h30"/>
+
+  <!-- Login failure path -->
+  <path class="dash" d="M370 390v58h-76"/>
+  <rect class="box-warm" x="95" y="420" width="200" height="58" rx="9"/>
+  <text class="body" x="115" y="445">Invalid credentials:</text>
+  <text class="small" x="115" y="465">show error and retry sign-in.</text>
+
+  <!-- Content destinations -->
+  <text class="section" x="55" y="548">Where saved changes go</text>
+  <text class="subtitle" x="55" y="574">Dashboard sections update the corresponding file or database table.</text>
+
+  <rect class="box" x="55" y="602" width="350" height="208" rx="12"/>
+  <text class="head" x="78" y="640">School settings</text>
+  <text class="body" x="78" y="674">
+    <tspan x="78" dy="0">School name, contact details, logo,</tspan>
+    <tspan x="78" dy="22">office hours and map settings are</tspan>
+    <tspan x="78" dy="22">saved in </tspan><tspan font-weight="700">config/site.php</tspan><tspan>.</tspan>
+  </text>
+
+  <rect class="box" x="430" y="602" width="350" height="208" rx="12"/>
+  <text class="head" x="453" y="640">Page copy &amp; home content</text>
+  <text class="body" x="453" y="674">
+    <tspan x="453" dy="0">Page headings and text → </tspan><tspan font-weight="700">page_content</tspan>
+    <tspan x="453" dy="24">Programmes, admissions, staff and</tspan>
+    <tspan x="453" dy="22">news → their matching database tables.</tspan>
+  </text>
+
+  <rect class="box" x="805" y="602" width="350" height="208" rx="12"/>
+  <text class="head" x="828" y="640">Academics &amp; gallery</text>
+  <text class="body" x="828" y="674">
+    <tspan x="828" dy="0">Course content → </tspan><tspan font-weight="700">academic_courses</tspan>
+    <tspan x="828" dy="24">Gallery details and image paths →</tspan>
+    <tspan x="828" dy="22" font-weight="700">gallery_items</tspan><tspan>.</tspan>
+  </text>
+
+  <rect class="box-teal" x="1180" y="602" width="365" height="208" rx="12"/>
+  <text class="head" x="1203" y="640">Public pages</text>
+  <text class="body" x="1203" y="674">
+    <tspan x="1203" dy="0">Read saved settings and database</tspan>
+    <tspan x="1203" dy="22">content to render the website.</tspan>
+    <tspan x="1203" dy="28">News and gallery items have</tspan>
+    <tspan x="1203" dy="22">published / unpublished controls.</tspan>
+  </text>
+
+  <!-- Contact-message flow -->
+  <line class="line" x1="55" y1="856" x2="1545" y2="856"/>
+  <text class="section" x="55" y="898">Contact message handling</text>
+  <text class="subtitle" x="55" y="923">Visitor inquiries follow a separate path into the dashboard inbox.</text>
+
+  <rect class="box-blue" x="95" y="960" width="350" height="110" rx="12"/>
+  <text class="head" x="120" y="1000">Website visitor</text>
+  <text class="body" x="120" y="1030">Submits the public contact form.</text>
+  <rect class="box" x="625" y="960" width="350" height="110" rx="12"/>
+  <text class="head" x="650" y="1000">contact_messages</text>
+  <text class="body" x="650" y="1030">Message is stored in the database.</text>
+  <rect class="box-teal" x="1155" y="960" width="350" height="110" rx="12"/>
+  <text class="head" x="1180" y="1000">Admin inbox</text>
+  <text class="body" x="1180" y="1030">Admin reads it or marks it as read.</text>
+  <path class="flow-teal" d="M445 1015h170"/>
+  <path class="flow-teal" d="M975 1015h170"/>
+
+  <text class="caption" x="55" y="1150">Figure 2.4. Main administrative and content publishing workflow.</text>
+</svg>

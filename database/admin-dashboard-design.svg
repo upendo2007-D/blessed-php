@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1300" viewBox="0 0 1600 1300" role="img" aria-labelledby="title description">
+  <title id="title">Figure 2.3. Admin dashboard interface design</title>
+  <desc id="description">A report-ready interface design based on the Blessed Sai school website CMS, showing its admin header, dashboard navigation, settings, page-copy editor, content collection editor and contact-message inbox.</desc>
+  <defs>
+    <linearGradient id="nav" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12395e"/>
+      <stop offset="1" stop-color="#0b2742"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0f4c81" flood-opacity=".08"/>
+    </filter>
+    <style>
+      .bg { fill: #f3f6fa; }
+      .top { fill: #0f4c81; }
+      .sidebar { fill: url(#nav); }
+      .card { fill: #fff; stroke: #dce3eb; stroke-width: 1.5; }
+      .ink { fill: #1f2937; }
+      .blue { fill: #0f4c81; }
+      .muted { fill: #64748b; }
+      .white { fill: #fff; }
+      .pale { fill: #dbeafe; }
+      .title { font: 700 25px "Segoe UI", Arial, sans-serif; fill: #1f2937; }
+      .section { font: 700 19px "Segoe UI", Arial, sans-serif; fill: #0f4c81; }
+      .label { font: 600 13px "Segoe UI", Arial, sans-serif; fill: #334155; }
+      .body { font: 14px "Segoe UI", Arial, sans-serif; fill: #475569; }
+      .small { font: 12px "Segoe UI", Arial, sans-serif; fill: #64748b; }
+      .nav-head { font: 700 17px "Segoe UI", Arial, sans-serif; fill: #fff; }
+      .nav-item { font: 14px "Segoe UI", Arial, sans-serif; fill: #dbeafe; }
+      .button { fill: #0f4c81; }
+      .button-text { font: 600 12px "Segoe UI", Arial, sans-serif; fill: #fff; }
+      .input { fill: #fff; stroke: #bac6d3; stroke-width: 1.3; }
+      .line { stroke: #e2e8f0; stroke-width: 1; }
+      .tag { font: 700 11px "Segoe UI", Arial, sans-serif; fill: #64748b; letter-spacing: 1.1px; }
+    </style>
+  </defs>
+  <rect class="bg" width="1600" height="1300"/>
+
+  <!-- Admin header -->
+  <rect class="top" x="0" y="0" width="1600" height="86"/>
+  <text class="white" x="82" y="39" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700">Website admin</text>
+  <text class="pale" x="274" y="39" font-family="Segoe UI, Arial, sans-serif" font-size="14">Signed-in administrator</text>
+  <rect x="1436" y="22" width="104" height="40" rx="7" fill="#0f4c81" stroke="#8db8da"/>
+  <text class="white" x="1455" y="47" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-decoration="underline">Sign out</text>
+
+  <!-- Dashboard navigation -->
+  <rect class="sidebar" x="70" y="124" width="270" height="1080" rx="14" filter="url(#shadow)"/>
+  <text class="nav-head" x="94" y="166">Dashboard</text>
+  <line x1="92" y1="186" x2="318" y2="186" stroke="#dbeafe" stroke-opacity=".22"/>
+  <rect x="84" y="201" width="242" height="42" rx="8" fill="#7dd3fc" fill-opacity=".14" stroke="#7dd3fc" stroke-opacity=".3"/>
+  <text class="white" x="103" y="227" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">School settings</text>
+  <text class="nav-item" x="103" y="273">Page headings and copy</text>
+  <text class="nav-item" x="103" y="315">Change password</text>
+  <line x1="96" y1="338" x2="314" y2="338" stroke="#dbeafe" stroke-opacity=".16"/>
+  <text class="small" x="103" y="368" fill="#a9c5df">HOME PAGE</text>
+  <text class="nav-item" x="103" y="400">Academic programmes</text>
+  <text class="nav-item" x="103" y="438">Admissions cards</text>
+  <text class="nav-item" x="103" y="476">Staff</text>
+  <text class="nav-item" x="103" y="514">News and events</text>
+  <line x1="96" y1="538" x2="314" y2="538" stroke="#dbeafe" stroke-opacity=".16"/>
+  <text class="small" x="103" y="568" fill="#a9c5df">WEBSITE CONTENT</text>
+  <text class="nav-item" x="103" y="600">Academic courses</text>
+  <text class="nav-item" x="103" y="638">Gallery</text>
+  <text class="nav-item" x="103" y="676">Contact messages</text>
+  <rect x="94" y="1155" width="220" height="1" fill="#dbeafe" fill-opacity=".18"/>
+  <text class="small" x="103" y="1182" fill="#a9c5df">CONTENT MANAGEMENT SYSTEM</text>
+
+  <!-- Main content heading -->
+  <text class="title" x="380" y="158">Manage website</text>
+  <text class="body" x="380" y="185">Update school information and the content shown on public pages.</text>
+
+  <!-- Change password section -->
+  <rect class="card" x="370" y="210" width="1160" height="145" rx="12" filter="url(#shadow)"/>
+  <text class="section" x="394" y="244">Change password</text>
+  <text class="label" x="394" y="275">Current password</text>
+  <rect class="input" x="394" y="286" width="240" height="39" rx="6"/>
+  <text class="small" x="411" y="311">Enter current password</text>
+  <text class="label" x="657" y="275">New password</text>
+  <rect class="input" x="657" y="286" width="240" height="39" rx="6"/>
+  <text class="small" x="674" y="311">At least 12 characters</text>
+  <text class="label" x="920" y="275">Confirm new password</text>
+  <rect class="input" x="920" y="286" width="240" height="39" rx="6"/>
+  <rect class="button" x="1180" y="286" width="158" height="39" rx="7"/>
+  <text class="button-text" x="1200" y="310">Change password</text>
+
+  <!-- Settings section -->
+  <rect class="card" x="370" y="375" width="1160" height="254" rx="12" filter="url(#shadow)"/>
+  <text class="section" x="394" y="410">School settings</text>
+  <text class="tag" x="1390" y="408">CONFIGURATION</text>
+  <text class="label" x="394" y="444">School name</text>
+  <rect class="input" x="394" y="455" width="345" height="39" rx="6"/>
+  <text class="body" x="408" y="480">Lugazi Progressive Secondary School</text>
+  <text class="label" x="760" y="444">Motto / slogan</text>
+  <rect class="input" x="760" y="455" width="345" height="39" rx="6"/>
+  <text class="body" x="774" y="480">Knowledge, Discipline and Excellence</text>
+  <text class="label" x="1126" y="444">Office hours</text>
+  <rect class="input" x="1126" y="455" width="370" height="39" rx="6"/>
+  <text class="body" x="1140" y="480">Mon-Fri, 8:00 AM-4:00 PM</text>
+  <text class="label" x="394" y="524">Phone</text>
+  <rect class="input" x="394" y="535" width="345" height="39" rx="6"/>
+  <text class="small" x="408" y="560">School phone number</text>
+  <text class="label" x="760" y="524">Email</text>
+  <rect class="input" x="760" y="535" width="345" height="39" rx="6"/>
+  <text class="small" x="774" y="560">School email address</text>
+  <text class="label" x="1126" y="524">Logo image path</text>
+  <rect class="input" x="1126" y="535" width="240" height="39" rx="6"/>
+  <text class="small" x="1140" y="560">/assets/img/...</text>
+  <rect class="button" x="1376" y="535" width="120" height="39" rx="7"/>
+  <text class="button-text" x="1398" y="559">Save settings</text>
+
+  <!-- Page copy section -->
+  <rect class="card" x="370" y="649" width="1160" height="208" rx="12" filter="url(#shadow)"/>
+  <text class="section" x="394" y="684">Page headings and copy</text>
+  <text class="small" x="394" y="708">HOME / HERO</text>
+  <text class="label" x="394" y="738">Title</text>
+  <rect class="input" x="394" y="749" width="1090" height="37" rx="6"/>
+  <text class="body" x="408" y="773">Lugazi Progressive Secondary School</text>
+  <text class="label" x="394" y="812">Text</text>
+  <rect class="input" x="394" y="822" width="900" height="24" rx="5"/>
+  <text class="small" x="408" y="840">Nurturing academic excellence, character, and a strong sense of community...</text>
+  <rect class="button" x="1310" y="813" width="174" height="37" rx="7"/>
+  <text class="button-text" x="1328" y="836">Save this copy</text>
+
+  <!-- Collection editor section -->
+  <rect class="card" x="370" y="877" width="1160" height="174" rx="12" filter="url(#shadow)"/>
+  <text class="section" x="394" y="913">Home: academic programmes</text>
+  <text class="body" x="394" y="942">Manage programme cards and their display order.</text>
+  <rect x="394" y="961" width="1090" height="54" rx="7" fill="#f8fafc" stroke="#dce3eb"/>
+  <text class="label" x="412" y="984">Sciences</text>
+  <text class="small" x="412" y="1003">Biology, Chemistry, Physics and Mathematics...</text>
+  <text class="label" x="790" y="984">Humanities &amp; Arts</text>
+  <text class="small" x="790" y="1003">History, Geography, Literature and Fine Art...</text>
+  <rect class="button" x="1335" y="971" width="149" height="34" rx="7"/>
+  <text class="button-text" x="1355" y="993">Add item</text>
+  <text class="small" x="394" y="1037">Each item can be edited, saved or deleted in the dashboard.</text>
+
+  <!-- Contact inbox section -->
+  <rect class="card" x="370" y="1071" width="1160" height="145" rx="12" filter="url(#shadow)"/>
+  <text class="section" x="394" y="1107">Contact messages</text>
+  <text class="small" x="1300" y="1105">Latest 100 messages</text>
+  <line class="line" x1="394" y1="1122" x2="1505" y2="1122"/>
+  <circle cx="406" cy="1154" r="6" fill="#e3a322"/>
+  <text class="body" x="424" y="1159">Visitor name &lt;visitor@email.example&gt; · Received date</text>
+  <text class="small" x="424" y="1184">Message text appears in the admin inbox.</text>
+  <rect x="1335" y="1140" width="149" height="34" rx="7" fill="#0f4c81"/>
+  <text class="button-text" x="1367" y="1162">Mark read</text>
+
+  <text class="small" x="70" y="1243">Interface design based on the current admin dashboard; content sections continue below the visible page area.</text>
+  <text x="70" y="1277" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-style="italic" fill="#29364b">Figure 2.3. Admin dashboard interface design.</text>
+</svg>

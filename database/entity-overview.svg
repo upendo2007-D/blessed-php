@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1050" viewBox="0 0 1440 1050" role="img" aria-labelledby="title description">
+  <title id="title">Figure 2.5. Database entity overview</title>
+  <desc id="description">Entity overview of the blessed_sai database, showing all nine tables, their columns and unique indexes. No foreign-key relationships are defined.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f3f6fb; }
+      .heading { font: 700 30px Arial, sans-serif; fill: #14213d; }
+      .subheading { font: 15px Arial, sans-serif; fill: #53627a; }
+      .card { fill: #ffffff; stroke: #d7dfeb; stroke-width: 1.5; }
+      .card-head { fill: #173b67; }
+      .table-name { font: 700 17px Arial, sans-serif; fill: #ffffff; }
+      .field { font: 14px Consolas, "Courier New", monospace; fill: #29364b; }
+      .type { fill: #68778e; }
+      .key { font-weight: 700; fill: #087f8c; }
+      .index { font: 12px Arial, sans-serif; fill: #53627a; }
+      .note { font: 14px Arial, sans-serif; fill: #53627a; }
+      .caption { font: italic 15px Arial, sans-serif; fill: #29364b; }
+      .rule { stroke: #d7dfeb; stroke-width: 1; }
+      .note-box { fill: #e8f1f5; stroke: #c9dde4; stroke-width: 1; }
+    </style>
+  </defs>
+  <rect class="bg" width="1440" height="1050"/>
+  <text class="heading" x="48" y="52">Database entity overview</text>
+  <text class="subheading" x="48" y="80">blessed_sai · MySQL / InnoDB · 9 tables</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(48 112)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">admins</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98"><tspan class="key">UQ</tspan><tspan>  email</tspan><tspan class="type">  VARCHAR(190) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124">    password_hash<tspan class="type">  VARCHAR(255) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    created_at<tspan class="type">  TIMESTAMP</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: email</text>
+  </g>
+  <g transform="translate(504 112)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">page_content</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98">    page_key<tspan class="type">  VARCHAR(40) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124">    block_key<tspan class="type">  VARCHAR(80) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    title<tspan class="type">  VARCHAR(255) NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    body<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: (page_key, block_key)</text>
+  </g>
+  <g transform="translate(960 112)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">programs</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98">    icon<tspan class="type">  VARCHAR(30) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124"><tspan class="key">UQ</tspan><tspan>  title</tspan><tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    description<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    sort_order<tspan class="type">  INT NOT NULL</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: title</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(48 370)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">admissions</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98">    label<tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124"><tspan class="key">UQ</tspan><tspan>  title</tspan><tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    description<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    sort_order<tspan class="type">  INT NOT NULL</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: title</text>
+  </g>
+  <g transform="translate(504 370)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">staff_members</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98"><tspan class="key">UQ</tspan><tspan>  name</tspan><tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124">    role<tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    initials<tspan class="type">  VARCHAR(12) NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    sort_order<tspan class="type">  INT NOT NULL</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: name</text>
+  </g>
+  <g transform="translate(960 370)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">news_items</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98">    published_at<tspan class="type">  DATE NOT NULL</tspan></text>
+    <text class="field" x="18" y="124"><tspan class="key">UQ</tspan><tspan>  title</tspan><tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    description<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    sort_order, is_published<tspan class="type">  INT, TINYINT(1)</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: (title, published_at)</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(48 628)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">academic_courses</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98"><tspan class="key">UQ</tspan><tspan>  title</tspan><tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124">    description<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    details<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    sort_order<tspan class="type">  INT NOT NULL</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: title</text>
+  </g>
+  <g transform="translate(504 628)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">gallery_items</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98"><tspan class="key">UQ</tspan><tspan>  image_path</tspan><tspan class="type">  VARCHAR(500) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124">    alt_text<tspan class="type">  VARCHAR(255) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    caption<tspan class="type">  VARCHAR(255) NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    sort_order, is_published<tspan class="type">  INT, TINYINT(1)</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Unique: image_path (191-character prefix)</text>
+  </g>
+  <g transform="translate(960 628)">
+    <rect class="card" width="432" height="238" rx="10"/>
+    <path class="card-head" d="M10 0h412a10 10 0 0 1 10 10v35H0V10A10 10 0 0 1 10 0z"/>
+    <text class="table-name" x="18" y="29">contact_messages</text>
+    <text class="field" x="18" y="72"><tspan class="key">PK</tspan><tspan>  id</tspan><tspan class="type">  INT UNSIGNED AUTO_INCREMENT</tspan></text>
+    <text class="field" x="18" y="98">    name<tspan class="type">  VARCHAR(180) NOT NULL</tspan></text>
+    <text class="field" x="18" y="124">    email<tspan class="type">  VARCHAR(190) NOT NULL</tspan></text>
+    <text class="field" x="18" y="150">    message<tspan class="type">  TEXT NOT NULL</tspan></text>
+    <text class="field" x="18" y="176">    created_at, is_read<tspan class="type">  TIMESTAMP, TINYINT(1)</tspan></text>
+    <line class="rule" x1="18" y1="192" x2="414" y2="192"/>
+    <text class="index" x="18" y="216">Index: created_at</text>
+  </g>
+
+  <rect class="note-box" x="48" y="892" width="1344" height="54" rx="8"/>
+  <text class="note" x="68" y="925"><tspan font-weight="700">Keys:</tspan> PK = primary key · UQ = unique key</text>
+  <text class="note" x="700" y="925"><tspan font-weight="700">Relationships:</tspan> No foreign-key constraints are declared in schema.sql.</text>
+  <text class="caption" x="48" y="990">Figure 2.5. Database entity overview.</text>
+</svg>
